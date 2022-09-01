@@ -1,0 +1,11 @@
+**/dist
+**/dist/*
+**/node_modules
+**/statics
+**/*.log
+**/**.env
+**/.DS_Store
+**/.env
+.vscode/
+**/schema.graphql
+**/graphql.type.ts

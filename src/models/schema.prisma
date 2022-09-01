@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Task {
+    id                      Int         @id @default(autoincrement())
+    category                Category    @relation(fields: [categoryId], references: [id])
+    categoryId              Int
+    title                   String
+    description             String?
+    status                  Int
+}
+
+model Category {
+    id                      Int         @id @default(autoincrement())
+    title                   String
+    description             String?
+    step                    Int
+    taskCount               Int
+    tasksCompletedCount     Int
+    status                  Int
+    tasks                   Task[]
+}

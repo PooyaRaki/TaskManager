@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "target": "ES2022",
+    "outDir": "./dist",
+    "declaration": true,
+    "diagnostics": false,
+    "incremental": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": false,
+    "noImplicitOverride": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "skipDefaultLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "exactOptionalPropertyTypes": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@router/*": [
+        "router/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@api/*": [
+        "api/*"
+      ],
+      "@models/*": [
+        "models/*"
+      ]
+    }
+  }
+}
